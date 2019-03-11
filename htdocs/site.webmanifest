@@ -1,0 +1,16 @@
+{
+    "name": "Percentage Calculator",
+    "short_name": "Percentage Calculator",
+    "icons": [
+        {
+            "src": "/android-chrome-48x48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#dddddd",
+    "background_color": "#dddddd",
+    "start_url": "http://percentagecalculator.rf.gd/",
+    "display": "standalone",
+    "orientation": "portrait"
+}

@@ -1,0 +1,89 @@
+//VARIABLES
+$BG:         #333
+$COLOR_P:    #bbbbbb
+$COLOR:      #dddddd
+$BORDER_C:   #000
+$BORDER_W:   2px
+
+
+
+
+
+//MIXINS
+
+
+
+
+
+//STYLES
+body 
+	background-color:   $BG
+	color:              $COLOR
+	text-align:         center
+	font-family: 'Ubuntu', sans-serif
+	letter-spacing: 1.3px
+	outline: 0 none !important
+	border: 0
+
+
+
+
+
+input , input:focus
+	border-color: 		black
+	border-radius: 		7px
+	border-bottom: 		2px
+	border-top: 		2px
+	border-right: 		2px
+	border-left: 		2px
+	padding: 			5px
+	background: 		#000
+	color: 				$COLOR
+	font-weight: 		bold
+	text-align: 		center
+	height: 			2em
+	font-size: 			1em
+	max-width: 			720px
+	width: 				90%
+	outline: 0 none !important
+	border: 0
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+	-webkit-appearance: none
+
+input[type=number] 
+	-moz-appearance:    textfield 
+
+.padding-small
+	padding: 			20px !important
+
+::placeholder 
+	text-align: 		center
+	color:      		$COLOR_P
+	font-weight: 		bold
+
+
+button, button:focus
+	padding: 			10px
+	width: 				120px 
+	height: 			auto 
+	font-size: 			14px
+	border-color: 		black
+	border-radius: 		7px
+	border-bottom: 		2px
+	border-top: 		2px
+	border-right: 		2px
+	border-left: 		2px
+	padding: 			10px
+	background: 		#000
+	color: 				$COLOR
+	font-weight: 		bold
+	outline: 			0 none !important
+	border: 			0
+	
+#grey 
+	color: darken($COLOR, 20%)
+	
+	
+
+

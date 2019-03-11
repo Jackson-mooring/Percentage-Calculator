@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html lang="en">
+	<head>
+        <!-- Loading Function -->
+        <script>
+            function loadApp() {
+                var inter = setInterval(function() {
+                    if ($ !== undefined) {
+                        clearInterval(inter);
+                        $('.loadingCover').hide();
+                    }
+                }, 1000)
+            }
+        </script>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+
+        <!-- Other -->
+		<title>Percentage Calculator</title>
+		<meta name="description" content="Percentage Calculator is a FREE online tool to help you calculate percentages.">
+  		<meta name="keywords" content="Calculator,%,percent,calculator,x,y,percentages,calc,percentage,1,2,3,4,5,6,7,8,9,0,web,online,app,calculate,free">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+
+        <!-- JS -->
+		<script src="main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"                      crossorigin="anonymous"></script>
+
+        <!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" onload="loadApp()" rel="stylesheet">
+
+        <!-- Icon -->
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
+        <meta name="apple-mobile-web-app-title" content="Percentage Calculator">
+        <meta name="application-name" content="Percentage Calculator">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#dddddd">
+
+
+        <style>
+        :root {
+            --height: 100vh;
+            --spinner-height: 44.7px;
+        }
+        
+            .loadingCover{
+                position: fixed;
+                right: 0;
+                left: 0;
+                top: 0;
+                Bottom: 0;
+                background: #333;
+
+            }
+            .spinner{
+                position: fixed;
+                top: calc(calc(var(--height) / 2) - calc(var(--spinner-height) / 2));
+                /*bottom: (var(--height) / 2) - (var(--spinner-height) / 2);*/
+            }
+            </style>
+	</head>
+	<body>
+        <div class="loadingCover text-center">
+        <div class="spinner-border text-light spinner" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        </div>
+		<h1>Percentage Calculator</h1>
+        <div class="padding-small"></div>
+		<p><b>X</b> is what percent of <b>Y</b>?</p>
+        <form>
+			<input type="number" id="numX" placeholder="X" step="1">
+			<div class="padding-small">% OF</div>
+			<input type="number" id="numY" placeholder="Y" step="1">
+			<div class="padding-small"></div>
+			<button class="submit" type="button" onclick="percentage()">CALCULATE</button>
+			<div class="padding-small"></div>
+			<h3 id="result" onclick="percentage()">RESULT: <i id="grey">(result)</i></h3>
+			
+		</form>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html> 
